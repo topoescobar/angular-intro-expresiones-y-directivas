@@ -1,0 +1,27 @@
+<!-- Usos simples -->
+<h2>Ejemplos de usos simples de expresiones</h2>
+<div>
+  <ul>
+    <!-- Computar una suma-->
+    <li>{{5 + 5}}</li>
+    
+    <!-- Concatenar varibales-->
+    <li>{{fruta + " " + verdura}}</li>
+    
+    <!-- Mostrar propiedades de un objeto -->
+    <li>
+      la ciudad de {{ciudad.nombre}} tiene {{ciudad.poblacion}} habitantes y pertenece
+      a la provincia de {{ciudad.provincia}}
+    </li>
+
+    <!-- Formatear salidas  -->
+    <li>{{ pi | number:'1.1-2'}}</li>
+
+    <!-- Acceder metódos -->
+    <li>La Fruta tiene: {{fruta.length}} letras</li>
+
+    <!-- Llamar a funciones del controlador -->
+    <li>{{helloWorld()}}</li>
+  </ul>
+</div>
+
