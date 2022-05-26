@@ -8,6 +8,7 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   fruta: string = 'manzana';
   verdura: string = 'lechuga';
+
   pi: number = 3.14159265359;
   ciudad = {
     nombre: 'Bahía Blanca',
@@ -17,4 +18,5 @@ export class AppComponent {
   helloWorld = () => {
     return 'Hola mundo!';
   };
+  canasto: any = ['Manzanas', 'Peras', 'Platanos', 'Frutillas'];
 }
