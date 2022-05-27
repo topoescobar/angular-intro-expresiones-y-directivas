@@ -23,12 +23,24 @@
     <!-- Llamar a funciones del controlador -->
     <li>{{ helloWorld() }}</li>
 
+    <h3>uso de ngIf: mostrar y ocultar texto</h3>
+    <p *ngIf="variable1">si var1 es verdadero entonces se muestra el texto</p>
+    <p *ngIf="variable2">si var2 es verdadero se muestra el texto</p>
+
     <!-- Usar iteracion para mostrar una lista -->
-    <h3>Frutas en el canasto</h3>
+    <h3>uso de ngFor: Frutas en el canasto</h3>
     <div *ngFor="let frutas of canasto">
       <li>
         <p>Hay {{ frutas }}</p>
       </li>
     </div>
+
+    <h3>uso de ngSwitch:comparar y mostrar</h3>
+    <!--directivas que cooperan entre si para generar un resultado-->
+    <li><div [ngSwitch]="estado">
+      <p *ngSwitchCase="1">El estado es 1</p>
+      <p *ngSwitchCase="2">El estado es 2</p>
+      <p *ngSwitchDefault>No es ningún estado conocido</p>
+    </div></li>
   </ul>
 </div>

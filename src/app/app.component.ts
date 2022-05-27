@@ -18,5 +18,9 @@ export class AppComponent {
   helloWorld = () => {
     return 'Hola mundo!';
   };
+
+  variable1:boolean = true;
+  variable2:boolean = false;
   canasto: any = ['Manzanas', 'Peras', 'Platanos', 'Frutillas'];
+  estado: number = 1;
 }
